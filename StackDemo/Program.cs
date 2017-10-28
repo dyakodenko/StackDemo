@@ -1,15 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace StackDemo
 {
-    class Program
+    class StackDemo
     {
-        static void Main(string[] args)
+        int EmptyCell = 0;
+        char[] StackArray;
+
+        public void InitializeStack(int StackSize)
         {
+            StackArray = new char[StackSize];
+        }
+
+        public void TryAdd(char NewElement)
+        {
+            if (EmptyCell >= StackArray.Length)
+            {
+                Console.WriteLine("The stack is empty");
+                return;
+            }
         }
     }
 }
