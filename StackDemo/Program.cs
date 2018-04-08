@@ -26,7 +26,7 @@ namespace StackDemo
 
         public char TryRemove()
         {
-            if (EmptyCell == 0)
+            if (EmptyCell == 1)
             {
                 Console.WriteLine("The stack is empty");
                 return (char) 0;
